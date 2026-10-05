@@ -1,12 +1,15 @@
-"""Streamlit web application for Kestrel Home Warranty Claim Review.
-Connects directly to the FastAPI service (POST /predict) with local fallback.
-"""
-
 import json
+import sys
 from datetime import datetime
+from pathlib import Path
 import requests
 import streamlit as st
 import pandas as pd
+
+# Ensure project root is in sys.path for robust module imports
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(PROJECT_ROOT))
 
 from src.config import (
     CANONICAL_FAULT_DESCRIPTIONS,
