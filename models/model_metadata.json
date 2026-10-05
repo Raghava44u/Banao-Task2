@@ -1,0 +1,74 @@
+{
+  "model_version": "1.0.0",
+  "model_type": "GradientBoostingClassifier",
+  "training_timestamp": "2026-10-05T17:39:37.592807",
+  "random_state": 42,
+  "decision_threshold": 0.4,
+  "validation_strategy": "Temporal Holdout (June 2026)",
+  "validation_metrics": {
+    "roc_auc": 0.8825503355704698,
+    "pr_auc": 0.4200652183475928,
+    "accuracy": 0.9752281616688396,
+    "precision": 0.5882352941176471,
+    "recall": 0.45454545454545453,
+    "f1": 0.5128205128205128
+  },
+  "all_candidate_metrics": {
+    "Logistic Regression": {
+      "roc_auc": 0.8868212324588163,
+      "pr_auc": 0.37016398617651436,
+      "accuracy": 0.6153846153846154,
+      "precision": 0.06389776357827476,
+      "recall": 0.9090909090909091,
+      "f1": 0.11940298507462686
+    },
+    "Random Forest": {
+      "roc_auc": 0.9255643685173887,
+      "pr_auc": 0.3494297143735213,
+      "accuracy": 0.940026075619296,
+      "precision": 0.2857142857142857,
+      "recall": 0.7272727272727273,
+      "f1": 0.41025641025641024
+    },
+    "HistGradientBoosting": {
+      "roc_auc": 0.8885600976205004,
+      "pr_auc": 0.27120442357616864,
+      "accuracy": 0.9009126466753585,
+      "precision": 0.17857142857142858,
+      "recall": 0.6818181818181818,
+      "f1": 0.2830188679245283
+    },
+    "Gradient Boosting": {
+      "roc_auc": 0.8825503355704698,
+      "pr_auc": 0.4200652183475928,
+      "accuracy": 0.9752281616688396,
+      "precision": 0.5882352941176471,
+      "recall": 0.45454545454545453,
+      "f1": 0.5128205128205128
+    }
+  },
+  "features": {
+    "numerical": [
+      "days_since_purchase",
+      "claim_amount_inr",
+      "customer_prior_claims",
+      "partner_tenure_days",
+      "claim_to_price_ratio",
+      "warranty_elapsed_ratio",
+      "is_under_2000",
+      "partner_is_new",
+      "new_partner_small_claim",
+      "p_prior_claims",
+      "p_prior_frauds",
+      "p_prior_fraud_rate"
+    ],
+    "categorical": [
+      "photo_attached",
+      "partner_inspected",
+      "partner_type",
+      "city",
+      "family",
+      "clean_claim_desc"
+    ]
+  }
+}

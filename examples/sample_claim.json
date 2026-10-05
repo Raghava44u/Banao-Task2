@@ -1,0 +1,15 @@
+{
+  "claim_id": "WC711348",
+  "submitted_at": "2026-07-01 10:45",
+  "partner_id": "SP3160",
+  "sku": "KH-RV-03",
+  "product_serial": "KH222151083",
+  "days_since_purchase": 240,
+  "claim_amount_inr": 1850.0,
+  "photo_attached": "Y",
+  "partner_inspected": "N",
+  "claim_description": "motor not running",
+  "inspector_note": "",
+  "customer_prior_claims": 2,
+  "source": "crm"
+}

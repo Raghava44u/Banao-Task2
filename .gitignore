@@ -1,0 +1,26 @@
+# Python environments & caches
+.venv/
+env/
+venv/
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+
+# OS and IDE files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Secrets & Local credentials
+.env
+*.key
+*.pem
+credentials.json
+
+# Streamlit local state
+.streamlit/
